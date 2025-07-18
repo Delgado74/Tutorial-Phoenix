@@ -1,0 +1,163 @@
+# 📲 Tutorial: Phoenix Wallet – Tu nodo Lightning en el bolsillo
+
+Este tutorial forma parte del programa educativo de las comunidades **Cuba Bitcoin** y **La IslaBTC**, enfocadas en la educación y adopción de **solo Bitcoin**. Aquí aprenderás a usar **Phoenix Wallet**, una billetera autocustodia y ligera que te permite enviar y recibir Bitcoin a través de la red Lightning de manera rápida y sencilla.
+
+---
+
+## 📚 Índice
+
+- [✨ ¿Qué es Phoenix Wallet?](#-qué-es-phoenix-wallet)
+- [🚀 Primeros pasos](#-primeros-pasos)
+  - [🔥 Pantallas de bienvenida](#-pantallas-de-bienvenida)
+  - [🆕 Crear una nueva billetera](#-crear-una-nueva-billetera)
+- [🔐 Copia de seguridad de la semilla](#-copia-de-seguridad-de-la-semilla)
+- [⚙️ Explorando la Configuración](#️-explorando-la-configuración)
+  - [I. General](#i-general)
+  - [II. Privacidad y seguridad](#ii-privacidad-y-seguridad)
+  - [III. Avanzado](#iii-avanzado)
+  - [IV. Zona peligrosa](#iv-zona-peligrosa)
+- [📥 Recibir Bitcoin](#-recibir-bitcoin)
+- [📤 Enviar Bitcoin](#-enviar-bitcoin)
+- [🧠 Conclusión y próximos pasos](#-conclusión-y-próximos-pasos)
+- [🙏 Agradecimientos y apoyo](#-agradecimientos-y-apoyo)
+
+---
+
+## ✨ ¿Qué es Phoenix Wallet?
+
+Phoenix es una billetera desarrollada por **ACINQ**, una de las principales empresas que mantienen la red Lightning. Su principal ventaja es que **funciona como un nodo Lightning ligero** con un único canal abierto al nodo de ACINQ, eliminando la complejidad de gestionar canales por ti mismo.
+
+Es **autocustodia**, lo que significa que **solo tú tienes acceso a tus fondos** y eres responsable de tu frase semilla.
+
+---
+
+## 🚀 Primeros pasos
+
+### 🔥 Pantallas de bienvenida
+
+Al abrir la aplicación por primera vez, verás tres pantallas:
+
+1. "Con Phoenix, enviar y recibir Bitcoin es fácil y seguro."
+2. "Phoenix usa canales de pago para rapidez y privacidad."
+3. "Al ser autocustodia, debes proteger tus palabras secretas."
+
+📸 **[Colocar aquí captura de las tres pantallas de bienvenida]**
+![alt text](image.png)
+---
+
+### 🆕 Crear una nueva billetera
+
+Selecciona **"Crear una nueva billetera"**.
+
+Verás la pantalla principal con:
+- Tu saldo en la parte superior.
+- Tres botones en la parte inferior: **Configuración**, **Recibir**, **Enviar**.
+- Una advertencia importante para hacer la copia de seguridad de la frase semilla.
+
+📸 **[Colocar aquí captura de la pantalla principal tras crear la billetera]**
+![alt text](image-1.png)
+---
+
+## 🔐 Copia de seguridad de la semilla
+
+Phoenix te mostrará **12 palabras**. Escríbelas en papel y guárdalas en un lugar seguro. Luego marca las casillas de confirmación:
+
+- ✅ He guardado la frase semilla.
+- ✅ Entiendo que si la pierdo, pierdo mis fondos.
+
+📸 **[Colocar aquí captura de la pantalla de respaldo de la semilla]**
+![alt text](image-2.png)
+![alt text](image-3.png)
+---
+
+## ⚙️ Explorando la Configuración
+
+Desde el botón **Configuración** accederás a cuatro secciones:
+
+### I. General
+- Información sobre Phoenix
+- Unidad de BTC, moneda fiat y tema visual
+- Pagos entrantes: descripción predeterminada, duración, formato (Taproot por defecto)
+- Pagos salientes: overpayment (permite pagar hasta 2x)
+- LNURL habilitado
+- Gestión de canales (recomendado no tocar)
+- Historial de pagos, contactos, notificaciones
+
+### II. Privacidad y seguridad
+- Protección con huella o PIN
+- Visualizar frase semilla
+- Electrum Server (funciona bien por defecto)
+- Soporte para conexión mediante **Tor** usando **Orbot**
+
+
+### III. Avanzado
+- Información técnica del nodo
+- Estado del canal Lightning único: liquidez de entrada y salida
+- Funciones experimentales: reclamar Lightning Address
+- Registro de eventos de la billetera
+
+### IV. Zona peligrosa
+- Cerrar canales (no recomendado)
+- Reestablecer billetera (requiere semilla)
+- Forzar cierre de canal (menos recomendable aún)
+
+📸 **[Colocar aquí capturas de cada sección de Configuración según corresponda]**
+![alt text](image-4.png)
+
+---
+
+## 📥 Recibir Bitcoin
+
+Phoenix permite recibir fondos **vía Lightning o Onchain**:
+
+- Si recibes **Onchain**, los fondos se convierten a Lightning automáticamente.
+- Si recibes **vía Lightning**, Phoenix abrirá el canal por ti, cobrando una pequeña comisión más las tarifas de minería.
+
+Soporta pagos con:
+- Facturas Lightning
+- Lightning Address
+- NFC
+- Bolt12 (implementación experimental)
+
+📸 **[Colocar aquí captura del botón y pantalla de "Recibir"]**
+![alt text](image-5.png)
+---
+
+## 📤 Enviar Bitcoin
+
+También puedes enviar Bitcoin:
+
+- **Vía Lightning** (recomendado)
+- **Vía Onchain** (reduce liquidez del canal y no se recomienda)
+
+Formas compatibles:
+- Factura Lightning
+- Lightning Address
+- NFC
+
+📸 **[Colocar aquí captura del botón y pantalla de "Enviar"]**
+![alt text](image-6.png)
+---
+
+## 🧠 Conclusión y próximos pasos
+
+Phoenix es una billetera que simplifica el uso de la red Lightning sin renunciar a la soberanía. No necesitas servidores, pero sí debes proteger tu semilla. 
+
+En próximos tutoriales abordaremos:
+- Cómo restaurar la billetera
+- Cómo expandir tu canal Lightning
+- Cómo realizar pagos y recibir de forma eficiente
+
+---
+
+## 🙏 Agradecimientos y apoyo
+
+Gracias por apoyar nuestra labor educativa. Si deseas contribuir:
+- 🧡 Deja una propina a nuestra **Lightning Address** *(enlace o código QR)*
+- 📥 Descarga Phoenix:
+  - [Mainnet (Google Play / APK)](https://play.google.com/store/apps/details?id=fr.acinq.phoenix.mainnet)
+  - [Testnet (F-Droid)](https://phoenix.acinq.co/testnet)
+
+---
+
+> 🛠️ Tutorial elaborado por miembros de **La IslaBTC** y **Cuba Bitcoin**.
